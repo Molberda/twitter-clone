@@ -4,8 +4,15 @@
   cursor: pointer;
 }
 
+.sidebarOption:hover{
+    background-color: var(--twitter-background);
+    color: var(--twitter-color);
+    border-radius: 2em;
+    transition: all 100ms ease-out;
+}
+
 .sidebarOption > .MuiSvgIcon-root {
-  padding: 1.3em;
+  margin: .8em;
 }
 
 .sidebarOption > h2 {
