@@ -10,7 +10,7 @@ const Sidebar = () => {
         <div className='sidebar'>
             <Twitter/>
 
-            <SidebarOption Icon={<Home/>} title='Home'/>
+            <SidebarOption active Icon={<Home/>} title='Home'/>
             <SidebarOption Icon={<Search/>} title='Explore'/>
             <SidebarOption Icon={<NotificationsNone/>} title='Notifications'/>
             <SidebarOption Icon={<MailOutline/>} title='Messages'/>
