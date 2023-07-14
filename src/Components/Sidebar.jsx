@@ -8,7 +8,7 @@ import { Button } from '@mui/material';
 const Sidebar = () => {
     return (
         <div className='sidebar'>
-            <Twitter/>
+            <Twitter className='sidebar__twitterIcon'/>
 
             <SidebarOption active Icon={<Home/>} title='Home'/>
             <SidebarOption Icon={<Search/>} title='Explore'/>
@@ -20,7 +20,7 @@ const Sidebar = () => {
             <SidebarOption Icon={<AccountCircleOutlined/>} title='Profile'/>
             <SidebarOption Icon={<MoreHorizOutlined/>} title='More'/>
 
-            <Button variant='contained'><h2>Tweet</h2></Button>
+            <Button  className='sidebar__tweet' fullWidth ><h2>Tweet</h2></Button>
         </div>
     );
 }

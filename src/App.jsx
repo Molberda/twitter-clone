@@ -1,15 +1,18 @@
-import './CSS/App.css';
-import Sidebar from './Components/Sidebar.jsx';
+import "./CSS/App.css";
+import Feed from "./Components/Feed";
+import Sidebar from "./Components/Sidebar";
+import Widgets from "./Components/Widgets";
 
 function App() {
   return (
     <div className="app">
-      <h1>lets build a twitter clone</h1>
-      <Sidebar/>
+          <Sidebar />
+          <Feed />
+          <Widgets/>
     </div>
   );
 }
 
-// https://youtu.be/rJjaqSTzOxI?t=1613
+// https://youtu.be/rJjaqSTzOxI?t=7199
 
 export default App;
