@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/Post.css";
 import { Avatar } from "@mui/material";
-import { Verified } from "@mui/icons-material";
+import { ChatBubbleOutline, FavoriteBorderOutlined, PublishOutlined, Repeat, Verified } from "@mui/icons-material";
 
 const Post = ({ displayName, username, verified, text, img, avatar }) => {
   return (
@@ -28,7 +28,10 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
           alt=""
         />
         <div className="post__footer">
-          
+          <ChatBubbleOutline/>
+          <Repeat/>
+          <FavoriteBorderOutlined/>
+          <PublishOutlined/>
         </div>
       </div>
     </div>
