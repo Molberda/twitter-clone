@@ -1,11 +1,27 @@
 .post{
     display: flex;
     align-items: flex-start;
+    gap: .5em;
     padding: 1.3em;
     border-bottom: .1em solid var(--twitter-background);
+}
+
+.post__badge{
+    font-size: 1em !important;
+    color: var(--twitter-color);
 }
 
 .post__body > img{
     border-radius: 1em;
     margin: .8em 0;
+}
+
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.post__footer > .MuiSvgIcon-root{
+    cursor: pointer;
 }
