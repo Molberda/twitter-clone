@@ -12,8 +12,17 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
-            <h3>David Moller <span><Verified/></span></h3>
+            <h3>
+              David Moller{" "}
+              <span>
+                <Verified className="post__badge" />
+              </span>
+            </h3>
           </div>
+          <div className="post__headerDescription">
+            <p>I challenge you to build a twitter clone using react</p>
+          </div>
+          
         </div>
       </div>
     </div>
