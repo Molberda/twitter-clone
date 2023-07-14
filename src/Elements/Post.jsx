@@ -22,6 +22,12 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
           <div className="post__headerDescription">
             <p>I challenge you to build a twitter clone using react</p>
           </div>
+        </div>
+        <img
+          src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjUyNmJnd2RoOGQ5a2pyMjB5MGhqNHhhN2N5dDdhdmZodzVhOWJjMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hryis7A55UXZNCUTNA/giphy.gif"
+          alt=""
+        />
+        <div className="post__footer">
           
         </div>
       </div>
