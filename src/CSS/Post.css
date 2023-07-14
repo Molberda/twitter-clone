@@ -1,0 +1,11 @@
+.post{
+    display: flex;
+    align-items: flex-start;
+    padding: 1.3em;
+    border-bottom: .1em solid var(--twitter-background);
+}
+
+.post__body > img{
+    border-radius: 1em;
+    margin: .8em 0;
+}
