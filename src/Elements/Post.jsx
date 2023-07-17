@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/Post.css";
-import { Avatar } from "@mui/material";
+import { Avatar, IconButton } from "@mui/material";
 import {
   ChatBubbleOutline,
   FavoriteBorderOutlined,
@@ -18,12 +18,11 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
-            <h3>
-              David Moller{" "}
-              <span>
-                <Verified className="post__badge" />
-              </span>
-            </h3>
+            <h3>David Moller </h3>
+            <span className="post__headerSpecial">
+              <Verified className="post__badge" />
+              <span>@Molberda</span>
+            </span>
           </div>
           <div className="post__headerDescription">
             <p>I challenge you to build a twitter clone using react</p>
@@ -34,10 +33,19 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
           alt=""
         />
         <div className="post__footer">
-          <ChatBubbleOutline fontSize="small" />
-          <Repeat fontSize="small" />
-          <FavoriteBorderOutlined fontSize="small" />
-          <PublishOutlined fontSize="small" />
+          {" "}
+          <IconButton>
+            <ChatBubbleOutline fontSize="small" />
+          </IconButton>{" "}
+          <IconButton>
+            <Repeat fontSize="small" />
+          </IconButton>
+          <IconButton>
+            <FavoriteBorderOutlined fontSize="small" />
+          </IconButton>
+          <IconButton>
+            <PublishOutlined fontSize="small" />
+          </IconButton>
         </div>
       </div>
     </div>

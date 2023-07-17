@@ -1,27 +1,48 @@
-.post{
-    display: flex;
-    align-items: flex-start;
-    gap: .5em;
-    padding: 1.3em;
-    border-bottom: .1em solid var(--twitter-background);
+.post {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1.3em;
+  padding-bottom: 0.8em;
+  border-bottom: 0.1em solid var(--twitter-background);
 }
 
-.post__badge{
-    font-size: 1em !important;
-    color: var(--twitter-color);
+.post__headerText,
+.post__headerSpecial {
+  display: flex;
+  align-items: center;
 }
 
-.post__body > img{
-    border-radius: 1em;
-    margin: .8em 0;
+.post__headerSpecial{
+    margin-left: .3em;
 }
 
-.post__footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2em;
+.post__badge {
+  font-size: 1.1em !important;
+  color: var(--twitter-color);
 }
 
-.post__footer > .MuiSvgIcon-root{
-    cursor: pointer;
+.post__headerSpecial > span {
+  color: rgb(154, 154, 154);
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+.post__body {
+  flex: 1;
+}
+
+.post__body > img {
+  border-radius: 1em;
+  margin: 0.8em 0;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.post__footer > .MuiSvgIcon-root {
+  cursor: pointer;
 }
