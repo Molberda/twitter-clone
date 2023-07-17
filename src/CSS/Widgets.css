@@ -1,5 +1,4 @@
 .widgets {
-  padding: 0 0.8em;
   flex: 0.3;
   overflow-y: scroll;
   scrollbar-width: 0;
@@ -25,4 +24,15 @@
     background-color: var(--twitter-background);
     outline: none;
     font-size: 1em;
+}
+
+.widgets__searchIcon{
+    color: gray;
+}
+
+.widgets__widgetContainer{
+    margin: 1em 0 0 1.3em;
+    background-color: #f5f8fa;
+    border-radius: 1.3em;
+    padding: 1.3em;
 }
