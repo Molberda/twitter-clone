@@ -1,7 +1,7 @@
 .feed{
     flex: .4;
     border: .1em solid var(--twitter-background);
-    min-width: fit-content;
+    /* min-width: fit-content; */
     position: relative;
     overflow-y: scroll;
     scrollbar-width: 0;

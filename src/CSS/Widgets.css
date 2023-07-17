@@ -1,11 +1,28 @@
-.widgets{
-    padding: 0 .8em;
-    flex: .3;
-    overflow-y: scroll;
-    scrollbar-width: 0;
-    -ms-overflow-style: none;
+.widgets {
+  padding: 0 0.8em;
+  flex: 0.3;
+  overflow-y: scroll;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
 }
 
-.widgets::-webkit-scrollbar{
-    display: none;
+.widgets::-webkit-scrollbar {
+  display: none;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: .8em;
+  border-radius: 1em;
+  margin: .8em 0 0 1em;
+}
+
+.widgets__input > input{
+    flex: 1;
+    border: none;
+    background-color: var(--twitter-background);
+    outline: none;
+    font-size: 1em;
 }

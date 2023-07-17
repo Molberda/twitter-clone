@@ -35,6 +35,7 @@
 .post__body > img {
   border-radius: 1em;
   margin: .8em 0 .2em;
+  max-width: 25em;
 }
 
 .post__footer {

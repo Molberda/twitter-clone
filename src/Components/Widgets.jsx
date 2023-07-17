@@ -11,8 +11,8 @@ const Widgets = () => {
   return (
     <div className="widgets">
       <div className="widgets__input">
-        <Search className="widgets__searchIcon" />
         <input placeholder="Search Twitter" type="text" />
+        <Search className="widgets__searchIcon" />
       </div>
       <div className="widgets__widgetContainer">
         <h2>Whats Happening</h2>
@@ -25,7 +25,7 @@ const Widgets = () => {
           options={{ height: 400 }}
         />
 
-        <TwitterShareButton url="" options={{ text: "reactjs is awesome" }} />
+        <TwitterShareButton url={'https://google.com'} options={{ text: "reactjs is awesome", via: 'Molberda' }} />
       </div>
     </div>
   );
