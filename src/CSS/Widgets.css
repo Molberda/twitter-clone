@@ -1,4 +1,11 @@
 .widgets{
     padding: 0 .8em;
     flex: .3;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;
+}
+
+.widgets::-webkit-scrollbar{
+    display: none;
 }

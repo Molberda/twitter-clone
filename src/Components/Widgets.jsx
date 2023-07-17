@@ -1,7 +1,11 @@
 import React from "react";
 import "../CSS/Widgets.css";
 import { Search } from "@mui/icons-material";
-import { TwitterTweetEmbed, TwitterTimelineEmbed } from "react-twitter-embed";
+import {
+  TwitterTweetEmbed,
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+} from "react-twitter-embed";
 
 const Widgets = () => {
   return (
@@ -20,6 +24,8 @@ const Widgets = () => {
           screenName="Cr7stianismo_"
           options={{ height: 400 }}
         />
+
+        <TwitterShareButton url="" options={{ text: "reactjs is awesome" }} />
       </div>
     </div>
   );
