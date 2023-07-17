@@ -14,6 +14,8 @@ const Feed = () => {
 
       <Tweetbox />
       <Post displayName="" username="" text="" img="" avatar="" verified />
+      <Post displayName="" username="" text="" img="" avatar="" verified />
+      <Post displayName="" username="" text="" img="" avatar="" verified />
     </div>
   );
 };

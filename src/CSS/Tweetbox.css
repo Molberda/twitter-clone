@@ -26,10 +26,18 @@ padding: .8em;
     border-radius: .5em;
 }
 
+.tweetbox__organizer{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 0 .8em;
+}
+
 .tweetbox__imgInput{
     border: none;
     outline: none;
     padding: .8em;
+    flex: 1;
 }
 
 .tweetbox__tweetbutton{
@@ -37,7 +45,6 @@ padding: .8em;
     color: white !important;
     border-radius: 2em !important;
     height: 2.5em !important;
-    margin-top: 1.3em !important;
     width: 5.5em !important;
     margin-left: auto !important;
 }

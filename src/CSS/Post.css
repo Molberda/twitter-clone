@@ -2,8 +2,8 @@
   display: flex;
   align-items: flex-start;
   gap: 1em;
-  padding: 1.3em;
-  padding-bottom: 0.8em;
+  padding: .8em;
+  padding-bottom: .3em;
   border-bottom: 0.1em solid var(--twitter-background);
 }
 
@@ -34,15 +34,11 @@
 
 .post__body > img {
   border-radius: 1em;
-  margin: 0.8em 0;
+  margin: .8em 0 .2em;
 }
 
 .post__footer {
   display: flex;
   justify-content: space-between;
   padding: 0 2em;
-}
-
-.post__footer > .MuiSvgIcon-root {
-  cursor: pointer;
 }
