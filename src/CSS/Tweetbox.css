@@ -10,7 +10,7 @@
 
 .tweetbox__input {
 display: flex;
-padding: .8em;
+padding-bottom: .8em ;
 }
 
 .tweetbox__input > input {
@@ -30,7 +30,6 @@ padding: .8em;
     display: flex;
     gap: 1em;
     align-items: center;
-    padding: 0 .8em;
 }
 
 .tweetbox__imgInput{
