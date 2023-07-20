@@ -24,8 +24,16 @@ const Widgets = () => {
           screenName="Cr7stianismo_"
           options={{ height: 400 }}
         />
-
-        <TwitterShareButton url={'https://google.com'} options={{ text: "reactjs is awesome", via: 'Molberda' }} />
+        <div className="twitter__btn">
+          <TwitterShareButton
+            url={"https://google.com"}
+            options={{
+              text: "reactjs is awesome",
+              via: "Molberda",
+              size: "large",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@
 .widgets__input {
   display: flex;
   align-items: center;
+  gap: 1em;
   background-color: var(--twitter-background);
   padding: .8em;
   border-radius: 1em;
@@ -31,8 +32,18 @@
 }
 
 .widgets__widgetContainer{
-    margin: 1em 0 0 1.3em;
+    margin: 1em 0 0 1em;
     background-color: #f5f8fa;
     border-radius: 1.3em;
     padding: 1.3em;
+}
+
+.twitter__btn{
+    display: flex;
+    margin-top: .5em;
+}
+
+.twitter__btn > div {
+    display: flex;
+    margin: 0 auto;
 }
