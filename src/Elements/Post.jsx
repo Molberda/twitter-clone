@@ -40,7 +40,7 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
           <div className="post__headerText">
             <h3>{displayName} </h3>
             <span className="post__headerSpecial">
-              {verified?<Verified className="post__badge" />: <></>}
+              {verified && <Verified className="post__badge" />}
               <span>@{username}</span>
             </span>
           </div>
