@@ -33,10 +33,9 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
           alt=""
         />
         <div className="post__footer">
-          {" "}
           <IconButton>
             <ChatBubbleOutline fontSize="small" />
-          </IconButton>{" "}
+          </IconButton>
           <IconButton>
             <Repeat fontSize="small" />
           </IconButton>

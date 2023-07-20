@@ -13,8 +13,16 @@
   align-items: center;
 }
 
+.post__headerText{
+  margin-bottom: .5em;
+}
+
 .post__headerSpecial{
     margin-left: .3em;
+}
+
+.post__headerText > h3{
+  font-size: 1.1em;
 }
 
 .post__badge {
@@ -25,7 +33,7 @@
 .post__headerSpecial > span {
   color: rgb(154, 154, 154);
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .post__body {
@@ -34,7 +42,7 @@
 
 .post__body > img {
   border-radius: 1em;
-  margin: .8em 0 .2em;
+  margin: .5em 0 .2em;
   max-width: 25em;
 }
 
