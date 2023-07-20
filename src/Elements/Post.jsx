@@ -12,7 +12,7 @@ import {
 const Post = ({ displayName, username, verified, text, img, avatar }) => {
   return (
     <div className="post">
-      <div className="post__avatar">
+      {/* <div className="post__avatar">
         <Avatar src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltee886584fd1cd345/60db8718892a730f5883a347/68a712aa7ffd3da7d91c2fe1469bda58990f7ab7.jpg?auto=webp&format=pjpg&width=3840&quality=60" />
       </div>
       <div className="post__body">
@@ -30,6 +30,26 @@ const Post = ({ displayName, username, verified, text, img, avatar }) => {
         </div>
         <img
           src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjUyNmJnd2RoOGQ5a2pyMjB5MGhqNHhhN2N5dDdhdmZodzVhOWJjMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/hryis7A55UXZNCUTNA/giphy.gif"
+          alt=""
+        /> */}
+      <div className="post__avatar">
+        <Avatar src={avatar}/>
+      </div>
+      <div className="post__body">
+        <div className="post__header">
+          <div className="post__headerText">
+            <h3>{displayName} </h3>
+            <span className="post__headerSpecial">
+              {verified?<Verified className="post__badge" />: <></>}
+              <span>@{username}</span>
+            </span>
+          </div>
+          <div className="post__headerDescription">
+            <p>{text}</p>
+          </div>
+        </div>
+        <img
+          src={img}
           alt=""
         />
         <div className="post__footer">
