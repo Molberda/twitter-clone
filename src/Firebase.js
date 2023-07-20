@@ -1,3 +1,5 @@
+import firebase from 'firebase'
+
 const firebaseConfig = {
     apiKey: "AIzaSyBlFlUxdZ7brnzWHmzDMgNmPC2mFIzEErY",
     authDomain: "dm-twitter-clone.firebaseapp.com",
@@ -6,3 +8,9 @@ const firebaseConfig = {
     messagingSenderId: "868375687909",
     appId: "1:868375687909:web:81899163c977955af1da0c"
   };
+
+  const firebaseApp = firebase.initializeApp(firebaseConfig)
+
+  const db = firebaseApp.firestore()
+
+  export default db
