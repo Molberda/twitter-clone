@@ -7,6 +7,10 @@
   border-bottom: 0.1em solid var(--twitter-background);
 }
 
+.post__body {
+  flex: 1;
+}
+
 .post__headerText,
 .post__headerSpecial {
   display: flex;
@@ -36,8 +40,8 @@
   font-weight: 600;
 }
 
-.post__body {
-  flex: 1;
+.post__headerDescription{
+  font-size: .9em;
 }
 
 .post__body > img {
