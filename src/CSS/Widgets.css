@@ -38,6 +38,12 @@
     padding: 1.3em;
 }
 
+.widgets__widgetContainer > h2{
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+
 .twitter__btn{
     display: flex;
     margin-top: .5em;
