@@ -3,13 +3,15 @@ import "../CSS/Feed.css";
 import { AutoAwesomeOutlined } from "@mui/icons-material";
 import Tweetbox from "../Elements/Tweetbox";
 import Post from "../Elements/Post";
+import db from "../Firebase";
 
 const Feed = () => {
-
-  const [posts, setPosts] = useState( [] );
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-  
+    db.collection('posts').onSnapshot((snapshot) =>
+      setPosts(snapshot.docs.map((doc) => doc.data()))
+    );
   }, [posts]);
 
   return (
@@ -18,8 +20,19 @@ const Feed = () => {
         <h2>Home</h2>
         <AutoAwesomeOutlined className="feed__icon" />
       </div>
-
       <Tweetbox />
+
+      {posts.map((post) => (
+        <Post
+          displayName={post.displayName}
+          username={post.username}
+          text={post.text}
+          img={post.img}
+          avatar={post.avatar}
+          verified={post.verified}
+        />
+      ))}
+
       <Post
         displayName="David Moller"
         username="molberda14"
