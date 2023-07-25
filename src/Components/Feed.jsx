@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/Feed.css";
 import { AutoAwesomeOutlined } from "@mui/icons-material";
 import Tweetbox from "../Elements/Tweetbox";
@@ -7,6 +7,10 @@ import Post from "../Elements/Post";
 const Feed = () => {
 
   const [posts, setPosts] = useState( [] );
+
+  useEffect(() => {
+  
+  }, [posts]);
 
   return (
     <div className="feed">
